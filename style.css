@@ -37,6 +37,14 @@ h1 {
 }
 article {
   margin: 20px 0px;
+  align-items: flex-start;
+  display: inline-flex;
+}
+
+.pub article {
+ margin: 20px 0px;
+  align-items: none;
+  display: block;
 }
 
 .row {
