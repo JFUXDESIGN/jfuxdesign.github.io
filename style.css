@@ -48,6 +48,16 @@ h1 {
   padding: 10px;
 }
 
+.aside {
+  float: right;
+  background-color: red;
+  padding: 10px;
+}
+
+.footer {
+  background-color: yellow;
+}
+
 / Responsive layout - makes a two column-layout instead of four columns /
 @media screen and (max-width: 900px) {
   .column {
