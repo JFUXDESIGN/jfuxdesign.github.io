@@ -14,7 +14,7 @@ body {
 .main {
   padding-top: 120px;
   max-width: 1000px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .top{
@@ -91,14 +91,14 @@ footer {
   padding: 40px;
 }
 
-/ Responsive layout - makes a two column-layout instead of four columns /
+/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
   .column {
     width: 50%;
   }
 }
 
-/ Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
