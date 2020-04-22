@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="UTF-8">
+<head>
+	<title>Portfolio JF</title>
+	<link rel="stylesheet" href="stylesheet2.css">
+  <link rel="stylesheet" href="menu.css">
+  <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="menu2.css">-->
+
+  <link rel="stylesheet" id="elementor-icons-shared-0-css" href="css/fontawesome.min.css?ver=5.12.0" type="text/css" media="all">
+  <link rel="stylesheet" id="elementor-icons-fa-solid-css" href="css/solid.min.css?ver=5.12.0" type="text/css" media="all">
+</head>
+
+<body>
+
+  <div class="main">	
+    <header class="header">
+     <div class="logo"><h1>Jean-François Hache</h1>
+      <h2>Designer UX/UI</h2></div>
+
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="index.html#ressources">Methodo</a></li>
+        <li><a href="#cv">CV</a></li>
+      </ul>
+
+    </header>  
+
+
+    <div class="container">	<br><br><br><br><br><br>
+      <a id="portfolio"></a>
+      <h3>¬ Projet 1 - Auchan photo<i class="fas fa-bullhorn" style="font-size: 18px; float: right; padding-right: 25px;"></i> </h3>
+      <br>
+
+      <img src="imgs/projet1-header-figma-screen.png" alt="projet 1" style="max-height: 250px;">
+
+      Facilitatrice : Awa | Décideur : Jeff | Interviewer : Awa<br>
+     
+<br>
+      <h4>Consigne :</h4> Ajouter de la perso dans une application e-commerce<br>
+<br>
+      <h4>Pourquoi cette application :</h4> Beaucoup de mauvais avis sur les apps store, mais c'est surtout un univers sympa ;)<br>
+<br>
+      <h4>Comment pourrions-nous CPN (par ordre d'importance) :</h4>
+      - Personnalisé le tri et filtre (3)<br>
+      - Améliorer la fiche produit (2)<br>
+      - Pas de barre de recherche (2)<br>
+      - Améliorer l'interface de l'accueil (1)<br>
+      - Avoir un aperçu du produit finalisé (1)<br>
+      - Simplifier la création de compte utilisateur (1)<br>
+      - Parcours trop difficile à comprendre (1)<br>
+      
+<br>
+      <h4>Persona :</h4>
+      - Nouvel utilisateur - adulte<br>
+      - Contraintes et frustrations : Il ne sait pas où acheter un mug personnalisé<br>
+      - Motivations et attentes : S'acheter un mug personnalisé pour le travail - en livraison - il sait que Auchan propose se service<br>
+      - Journée type : Il travaille la semaine<br>
+      - Personnalité : Il aime le café<br>
+      - Outils : Mobile<br>
+<br>
+<h4>Objectif :</h4> L'utilisateur souhaite grâce à l'application Auchan photo, acheter un mug classique, le personnaliser en y ajoutant une de ses photos, et se le faire livrer rapidement.<br>
+     <br>
+       <h4>Parcours utilisateur :</h4>
+      1. Onboarding<br>
+      2. Accueil / Recherche<br>
+      3. Tri<br>
+      4. Sélection produit<br>
+      5. Fiche produit<br>  
+      6. Personnalisation<br>
+      7. Création de compte<br>
+      8. Panier<br>  
+      9. Paiement / livraison<br>
+      10. Confirmation<br>  
+
+<br>
+       <h4>Découverte :</h4>
+      - Moteur de recherche<br>
+      - bouche à oreille<br>
+      - Notoriété enseigne<br>
+      - Pub Ad<br>
+      - Blog<br>
+<br>
+       <h4>Après :</h4>
+      - Récompense (réductions...)<br>
+      - Mail confirmation commande<br>
+      - Mail de suivi livraison<br>
+      - Newsletter<br>
+      - Avis après reception colis<br>
+<br>
+       <h4>Benchmark :</h4>
+      - Récompense (réductions...)<br>
+      - Mail confirmation commande<br>
+      - Mail de suivi livraison<br>
+      - Newsletter<br>
+      - Avis après reception colis<br>
+<br>
+    </div>
+  </div>
+  <!-- END MAIN --><br><br>
+</div>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script id="rendered-js">
+// Select all links with hashes
+$('a[href*="#"]')
+// Remove links that don't actually link to anything
+.not('[href="#"]').
+not('[href="#0"]').
+click(function (event) {
+  // On-page links
+  if (
+    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+
+    location.hostname == this.hostname)
+  {
+    // Figure out element to scroll to
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    // Does a scroll target exist?
+    if (target.length) {
+      // Only prevent default if animation is actually gonna happen
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: target.offset().top },
+        1000, function () {
+        // Callback after animation
+        // Must change focus!
+        var $target = $(target);
+        $target.focus();
+        if ($target.is(":focus")) {// Checking if the target was focused
+          return false;
+        } else {
+          $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+          $target.focus(); // Set focus again
+        };
+      });
+    }
+  }
+});
+//# sourceURL=pen.js
+</script>
+
+</body>
+</html>

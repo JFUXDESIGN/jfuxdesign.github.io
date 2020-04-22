@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;margin:0; padding:0;
+}
+html{
+
+  margin:0; padding:0; font-size: 14px;
+font-family: 'Work Sans', sans-serif;
+}
+
+body {
+  background-color: #f1f1f1; color:#1d1e3c;
+ 
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+hr {border: 1px solid #dddddd; margin: 15px 0 20px 0;}
+
+.main {
+  max-width: 1000px; padding: 0px;
+  margin: 0 auto;
+  background-color: #ffffff; scroll-behavior: smooth;overflow-y: scroll;
+}
+
+.container{ 
+ padding: 0 20px;}
+
+.row {/* 
+  display: flex;
+  flex-wrap: wrap;                          added  align-items: flex-start;
+  text-align: center;
+ justify-content: flex-start;*/
+   display: flex;  justify-content: space-evenly; align-content: stretch;
+  flex-wrap: wrap;                         /*  added  align-items: flex-start;*/
+  text-align: center;
+}
+
+/ Add padding BETWEEN each column /
+.row,
+.row > .column {
+  padding: 80px; 
+
+}
+
+/ Create four equal columns that floats next to each other /
+.column {
+	display: inline-flex; 
+}
+
+/ Clear floats after rows /
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.content {
+ padding: 30px; margin: 0 25px 20px 0; width: 215px; border: 0px solid #cccccc; box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.3);
+}
+
+.content:hover { /*box-shadow: 0 2px 4px rgba(50,50,93,.226),0 1px 3px rgba(0,0,0,.08); */
+	box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.6);
+}
+
+img{
+width: 100%;
+}
+
+.elementor-icon {
+display: inline-block;
+line-height: 1;
+-webkit-transition: all .3s;
+-o-transition: all .3s;
+transition: all .3s;
+color: #818a91;
+font-size: 50px;
+text-align: center;
+}
+
+.elementor-icon i, .elementor-icon svg {
+width: 1em;
+height: 1em;
+position: relative;
+display: block;
+
+}
+
+.header h1 { font-size:24px;  line-height:1.3em;font-weight:600; }
+.header h2  {font-size:14px;  line-height:0.75em; margin: 10px 0px; color: #aaaaaa;font-weight:300;}
+
+h1 {font-size:24px;  line-height:1em; }
+h2  {font-size:1px;  line-height:0.75em; margin: 10px 0px; color: #aaaaaa; }
+h3 {font-size:24px; line-height:1.2em; margin-top: 10px; color: #aaaaaa; font-weight:300; margin: 30px 0px 10px 10px; }
+h4 {font-size:15px;  line-height:1.2em; margin-top: 10px; }
+p {color:#aaaaaa; font-size:11px;  line-height:1.5em; }
+address a { font-size:14px; color:#cccccc; font-style: normal; text-decoration: none;  }
+.elementor-icon {color:#777777; font-size:42px;  line-height:1.5em; margin-top:15px;  }
+
+
+.button { display:inline-block; text-align:center; 
+margin:20px auto 0 auto; width: 120px;
+font-size: 11px;
+color: #777777;
+background-color: rgba(0,0,0,0);
+border-style: solid;
+border-width: 1px 1px 1px 1px;
+border-color: #777777;
+border-radius: 23px 23px 23px 23px;
+padding: 10px 0px;
+}
+
+.button:hover, .button:focus {
+color: #d6b118;
+background-color: rgba(214,177,24,0);
+border-color: #d6b118;
+
+}
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+  .content {
+ padding: 30px; width: 90%; display:inline-block; vertical-align:baseline; text-align: left;
+}
+img{
+	width: 45%; margin-right: 40px;
+	float: left; display:inline-block; 
+}
+h3  { line-height:1.2em; }
+
+.button {  margin: 20 0 0 0px; float:right; }
+
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+  .column { width: 100%;
+align-items: none;
+  display: block;
+
+  }
+.column header{ height: 70px; margin-top: 40px;}
+p {font-size:14px;  }
+
+.content {
+ padding: 30px; width: 100%; margin: 20px 0; 
+ box-shadow: 0px 0px 40px -10px rgba(0,0,0,0.5)
+}
+.button {  margin: 40 0 0 0px; float:none; }
+
+}
