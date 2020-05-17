@@ -1,16 +1,18 @@
 
 
 /*Réinitilaisation de la liste déroulante*/
-select {
+select { -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 appearance: none;
 outline: 0;
 border: 0 !important;
 background: #ffffff;
 background-image: none;
 box-shadow: none;
-font-size: 1em; line-height:2em; vertical-align:bottom;
+font-size: 1em; line-height:2.5em; vertical-align:middle; 
 }
- 
+
 option {padding: 0px 0 0px 20px;}
 
 /* Mise en place des dimensions. On cache la flèche d’origine */
@@ -24,7 +26,7 @@ border: 1px solid #CED4DA;line-height:2em; vertical-align:middle;
 }
 /* On adapte la liste déroulante à la div qui l’englobe*/
 select {
-width: 105%;
+width: 100%;
 height: 100%;
 margin: 0;
 padding-left: 15px;
@@ -35,7 +37,7 @@ cursor: pointer;
 .select::after {
 content: '\276F';
 position: absolute;
-top: 20%;
+top: 15%;
 right: 0;
 padding: 0 15px;
 background: white;
