@@ -40,6 +40,71 @@ img {  outline:none; border: 0;
 header {  margin:0px; padding:0px; display:inline-block; }
 
 
+.container{ 
+ padding: 0 20px;}
+
+.row {/* 
+  display: flex;
+  flex-wrap: wrap;                          added  align-items: flex-start;
+  text-align: center;
+ justify-content: flex-start;*/
+   display: flex;  justify-content: space-evenly; align-content: stretch;
+  flex-wrap: wrap;                         /*  added  align-items: flex-start;*/
+  text-align: center;
+}
+
+/ Add padding BETWEEN each column /
+.row,
+.row > .column {
+  padding: 20px; 
+
+}
+
+/ Create four equal columns that floats next to each other /
+.column {
+  display: inline-flex; 
+}
+
+/ Clear floats after rows /
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.projet-index {
+ padding: 0 0 25px 0; margin: 0 15px 20px 0; width: 100%; max-width: 350px; border: 0px solid #cccccc; box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.3);
+}
+
+.projet-index:hover { /*box-shadow: 0 2px 4px rgba(50,50,93,.226),0 1px 3px rgba(0,0,0,.08); */
+  box-shadow: 0px 0px 25px -10px rgba(0,0,0,0.4);
+}
+
+.projet-index header {
+  margin-top: 25px; line-height: 0.5em;
+}
+
+.button { display:inline-block; text-align:center; 
+margin:10px auto 0 auto; width: 120px;
+font-size: 11px;
+color: #777777;
+background-color: rgba(0,0,0,0);
+border-style: solid;
+border-width: 1px 1px 1px 1px;
+border-color: #777777;
+border-radius: 23px 23px 23px 23px;
+padding: 10px 0px;
+}
+
+.button:hover, .button:focus {
+color: #d6b118;
+background-color: rgba(214,177,24,0);
+border-color: #d6b118;
+
+}
+
+
 
 .menu-etude {font-size:1em; padding:20px 40px 5px 40px; text-align:center; text-decoration:none; line-height:1.4em; }
 .menu-etude a {text-decoration:none; color:#1d1e3c; }
@@ -338,7 +403,7 @@ article button { margin:0px; padding:0px 0 10px 0;
 
 .flex-row-quatre {font-size:0.85em; display: flex; flex-wrap: wrap; width:100%; justify-content: center; padding:0px 25px 0px 25px; 
   align-items: flex-end;  height:auto; text-align:center;  /* box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.3); */ }
-  .flex-row-quatre img {box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.3); background-color: rgba(0,0,0,0);}
+  .flex-row-quatre img {box-shadow: 0px 0px 5px -5px rgba(0,0,0,0.2); background-color: rgba(0,0,0,0);}
 .flex-row-quatre .column-1 { flex: 1 1 17%; padding: 15px 10px 25px 10px; margin:5px 0px; border-right:0px solid black; }
 .flex-row-quatre .column-2 { flex: 1 1 6%; padding: 15px 10px 25px 10px; margin:5px 0px; border-right:0px solid black;  }
 .flex-row-quatre .column-3 { flex: 1 1 100%; padding: 15px 10px 15px 10px; margin:5px 0px; border-right:0px solid black; max-width:150px; }
@@ -511,6 +576,8 @@ h3 { display:block;  padding:0px 0 10px 0; }
 	 
 
 @media (min-width: 481px) and (max-width: 767px) {
+
+
 
 article {
   margin:0px; padding:0px; height:auto; border-bottom:1px solid black;

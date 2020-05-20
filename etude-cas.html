@@ -9,7 +9,7 @@
     <title>Portfolio JF - Étude de cas - Auchan Drive</title>
     
 	<link rel="stylesheet" href="stylesheet-ok2.css">
-  <link rel="stylesheet" href="menu-ok.css"> 
+  <link rel="stylesheet" href="menu-ok2.css">
   <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <!--<link rel='stylesheet' id='elementor-icons-fa-brands-css' href='css/brands.min.css?ver=5.12.0' type='text/css' media='all'/>porkjf59 -->
@@ -46,6 +46,11 @@
 
 </style>
 
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166109421-1"></script>
@@ -83,7 +88,30 @@
 -->
 
   
- <div class="main">	<a href="index.html"><i class="fas fa-home"></i></a>
+ <div class="main">	
+<nav>
+<ul class="menu">
+<a href="index.html"><li class="logo"><strong>Jean-François Hache</strong><br>
+Designer UX/UI</li></a>
+<li class="menu-item"><a href="index.html#portfolio">Portfolio</a></li>
+<li class="menu-item"><a href="index.html#ressources">Methodo</a></li>
+<li class="menu-item"><a href="index.html#cv">CV</a></li>
+<li class="menu-item"><a href="index.html#">contact</a></li>
+<!--<li class="menu-item search">
+<form id="search">
+<input type="search" placeholder="search">
+</form>
+</li>-->
+<li class="menu-item tel font-2l"><a href="#cv"><i class="fab fa-linkedin-in"></i></a> <a href="#cv"><i class="fab fa-instagram"></i></a> <a href="#cv"><i class="fab fa-spotify"></i></a> &nbsp;</li>
+<li class="toggle">
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span>
+</li>
+</ul>
+</nav>
+<br><br><br><br><br>
+
     <div class="container">	
       <a id="portfolio"></a>
      <h1>¬ Étude de cas - Auchan Drive</h1>
@@ -163,7 +191,13 @@ Concrètement l’application permet de faire comme sur le site internet, c’es
 
  <article class="article-etude-cas">
   <header><h3><i class="fas fa-users"></i> L’équipe projet</h3></header>
- <p>Pour commencer, le formateur choisit les membres du groupe : pour ce projet, nous étions quatre, Alice, Ezahra, Hanane et moi même. Suite au vote de chacun (après un tour de table) ; Alice a eu le rôle d'intervieweuse, Ezahra le rôle de facilitatrice et Hanane de décideuse. De mon côté, rien, mais j’ai pu avoir le rôle de décideur sur un ancien projet.</p>
+ <p>Pour commencer, nous allons définir les différents rôles dans l'univer UX</p> 
+ <p style="padding-top:25px; padding-bottom:25px; border:1px solid black; margin:0px 30px;">
+   <strong>Facilitateur :</strong> Mettre le groupe en confiance, de s’assurer du climat d’écoute, que tout le monde puisse s’exprimer, de produire, qu’il n’y a pas de mauvaises idées (même les plus folles), de veiller au respect du temps des étapes dans la bonne humeur, de faire émerger des idées communes en reformulant les questions sans induir par des conseils ou un jugement afin de faire ressortir les valeurs communes et perçues. De clarifier pour trouver le point central de la problématique. En gros, de co-construire en faisant échanger des personnes d’un groupe.<br>
+<strong>Interviewer :</strong> À faire<br>
+<strong>Décideur :</strong> Celui qui tranche si il a un ex aequo, mais surtout, c'est la personne qui a le plus de pouvoir (de vote) tout au long du processus, ce qui lui donne le privilège de diriger vers où il pense que le projet doit aller. Selon ses convictions.<br>
+</p><br>
+<p>Maintenant que l'on discerne bien les différents entre les rôles, pour ce projet, le formateur choisit les membres du groupe : nous étions quatre, Alice, Ezahra, Hanane et moi même. Suite au vote de chacun (après un tour de table), Alice a obtenue le rôle d'intervieweuse, Ezahra le rôle de facilitatrice et Hanane de décideuse. De mon côté, rien, mais j’ai pu avoir le rôle de décideur sur un ancien projet.</p>
 
  <div class="flex-row-equipe">
     <div class="column-1"><a href="https://www.linkedin.com/in/alicethammavong" target="blank"><img src="imgs/equipe/alice.png" alt="alice thammavong"></a><span class="equipe-font">Alice</span><br><i class="far fa-comments"></i> Intervieweuse</div>
@@ -172,7 +206,8 @@ Concrètement l’application permet de faire comme sur le site internet, c’es
     <div class="column-5"><a href="https://www.linkedin.com/in/jean-françois-hache-a9005945/" target="blank"><img src="imgs/equipe/jf.jpg" alt="jean-françois hache"></a><span class="equipe-font">JF</span></div>
 </div>
 
- <p style="color:#FF0000;">EXPLIQUER LES ROLES</p>
+
+
 
 </article>
 <!--
@@ -690,7 +725,18 @@ function ChangeUrl(formulaire)
        } 
    } 
 </script> 
-
+<!-- MENU -->
+<script id="rendered-js">
+$('.toggle').click(function () {
+  $(this).toggleClass("is-active");
+  if ($(".menu-item").hasClass("active")) {
+    $(".menu-item").removeClass("active");
+  } else {
+    $(".menu-item").addClass("active");
+  }
+});
+//# sourceURL=pen.js
+    </script>
 
 </body>
 </html>

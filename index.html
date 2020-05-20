@@ -10,8 +10,8 @@
     
 <head>
 	<title>Portfolio JF</title>
-	<link rel="stylesheet" href="stylesheet2.css">
-<link rel="stylesheet" href="menu.css">
+	<link rel="stylesheet" href="stylesheet-ok2.css">
+<link rel="stylesheet" href="menu-ok2.css">
  <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" id="elementor-icons-shared-0-css" href="css/fontawesome.min.css?ver=5.12.0" type="text/css" media="all">
@@ -23,12 +23,24 @@
   img{
   width: 45%; margin-right: 40px;
   float: left; display:inline-block; 
-}}</style>
+}}
+</style>
+
+
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
 </head>
+
 
 <body>
 
 <div class="main">	
+
+  <!--
 <header class="header">
  <div class="logo"><h1>Jean-François Hache</h1>
 <h2>Designer UX/UI</h2></div>
@@ -44,9 +56,33 @@
   </ul>
   
 </header>  
+-->
 
+<nav>
+<ul class="menu">
+<a href="index.html"><li class="logo"><strong>Jean-François Hache</strong><br>
+Designer UX/UI</li></a>
+<li class="menu-item"><a href="index.html#portfolio">Portfolio</a></li>
+<li class="menu-item"><a href="index.html#ressources">Methodo</a></li>
+<li class="menu-item"><a href="index.html#cv">CV</a></li>
+<li class="menu-item"><a href="index.html#">contact</a></li>
+<!--<li class="menu-item search">
+<form id="search">
+<input type="search" placeholder="search">
+</form>
+</li>-->
+<li class="menu-item tel font-2l"><a href="#cv"><i class="fab fa-linkedin-in"></i></a> <a href="#cv"><i class="fab fa-instagram"></i></a> <a href="#cv"><i class="fab fa-spotify"></i></a> &nbsp;</li>
+<li class="toggle">
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span>
+</li>
+</ul>
+</nav>
 
-<div class="container">	<br><br><br><br><br><br>EN COURS DE RÉALISATION<br>
+<br><br><br><br>
+
+<div class="container">	<br><br>EN COURS DE RÉALISATION<br><br><br>
 <a id="portfolio"></a>
 <h3>¬ Portfolio <i class="fas fa-bullhorn" style="font-size: 18px; float: right; margin-right: 25px;"></i> </h3>
 <br>
@@ -54,7 +90,7 @@
 <!-- Portfolio Gallery Grid -->
 <div class="row">
   <div class="column">
-    <div class="content">
+    <div class="projet-index">
       <img src="imgs/projet1/header-projet1b.jpg" alt="projet 1">
        <header><h4>Auchan Photo</h4>
       <p>Projet n1</p></header>
@@ -63,7 +99,7 @@
   </div>
 
   <div class="column">
-    <div class="content">
+    <div class="projet-index">
       <img src="imgs/projet2/header-projet2.jpg" alt="projet 2">
       <header><h4>Meilleurs Taux</h4>
       <p>Projet n2</p></header>
@@ -75,7 +111,7 @@
 
 
   <div class="column">
-    <div class="content">
+    <div class="projet-index">
      <img src="imgs/projet3/header-projet3.jpg" alt="projet 3">
 
        <header><h4>Auchan Drive</h4>
@@ -86,7 +122,7 @@
 
 
   <div class="column">
-    <div class="content">
+    <div class="projet-index">
       <img src="imgs/projet4/header-projet4.jpg" alt="projet 4">
        <header><h4>Dragonavirus</h4>
       <p>Projet n4</p></header>
@@ -95,7 +131,7 @@
   </div>
 
   <div class="column">
-    <div class="content">
+    <div class="projet-index">
       <img src="imgs/projet5/header-projet5.jpg" alt="projet 5">
        <header><h4>Jeff de Bruges</h4>
       <p>Projet n5</p></header>
@@ -112,7 +148,7 @@
 
 <div class="row">
 <div class="column">
-    <div class="content">
+    <div class="projet-index">
       <img src="imgs/projet3/header-projet3.jpg" alt="projet 3">
        <header><h4>Étude de cas</h4>
       <p>Projet Auchan Drive</p></header>
@@ -188,5 +224,18 @@ click(function (event) {
 //# sourceURL=pen.js
     </script>
 
+
+<!-- MENU -->
+<script id="rendered-js">
+$('.toggle').click(function () {
+  $(this).toggleClass("is-active");
+  if ($(".menu-item").hasClass("active")) {
+    $(".menu-item").removeClass("active");
+  } else {
+    $(".menu-item").addClass("active");
+  }
+});
+//# sourceURL=pen.js
+    </script>
 </body>
 </html>

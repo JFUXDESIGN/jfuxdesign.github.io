@@ -11,6 +11,7 @@
  
    
 	<link rel="stylesheet" href="stylesheet-ok2.css">
+     <link rel="stylesheet" href="menu-ok2.css">
   <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" id="elementor-icons-shared-0-css" href="css/fontawesome.min.css?ver=5.12.0" type="text/css" media="all">
@@ -21,7 +22,11 @@
   <link rel="stylesheet" href="css/pop/index.css" />
   <link rel="stylesheet" href="css/pop/_defaults.css" />
  
-
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
 
 </head>
 
@@ -29,7 +34,29 @@
 
   <a id="top"></a>
  <div class="main">	
+ <nav>
+<ul class="menu">
+<a href="index.html"><li class="logo"><strong>Jean-François Hache</strong><br>
+Designer UX/UI</li></a>
+<li class="menu-item"><a href="index.html#portfolio">Portfolio</a></li>
+<li class="menu-item"><a href="index.html#ressources">Methodo</a></li>
+<li class="menu-item"><a href="index.html#cv">CV</a></li>
+<li class="menu-item"><a href="index.html#">contact</a></li>
+<!--<li class="menu-item search">
+<form id="search">
+<input type="search" placeholder="search">
+</form>
+</li>-->
+<li class="menu-item tel font-2l"><a href="#cv"><i class="fab fa-linkedin-in"></i></a> <a href="#cv"><i class="fab fa-instagram"></i></a> <a href="#cv"><i class="fab fa-spotify"></i></a> &nbsp;</li>
+<li class="toggle">
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span>
+</li>
+</ul>
+</nav>
 
+<br><br><br><br>
     <div class="container">	
       <a id="portfolio"></a>
       <h1>¬ Projet 3 - Auchan Drive</h1> <span style="font-size: 1.5em; padding-right: 25px; padding-top:25px; float: right; display:inline-block;"><a href="index.html"><i class="fas fa-home"></i></a> &nbsp; <a href="projet2.html"><i class="fas fa-angle-left" ></i></a> &nbsp; &nbsp; <a href="projet4.html"><i class="fas fa-angle-right"></i></a></span>
@@ -118,7 +145,7 @@
       <br>
     
       <article>
-<button type="button" class="collapsible"><header><h3><i class="far fa-clone"></i> Comment pourrions-nous CPN</h3></header></button>
+<button type="button" class="collapsible"><header><h3><i class="far fa-clone"></i> Comment pourrions-nous ?</h3></header></button>
 <div class="content">
      
       <p style="text-align:left;">Points de frictions et classement par ordre d'importance et similitude.</p>
@@ -220,7 +247,7 @@ Ensuite pour les pendants, il y a la familiarisation où l'on appâte le clients
         </ul></div>
 
         <div class="column-2">
-          <a href="imgs/projet2/1-cpn.jpg" data-imagelightbox="c"><img src="imgs/projet2/1-cpn.jpg" alt="CPN"></a>
+          <a href="imgs/projet3/bench.jpg" data-imagelightbox="c"><img src="imgs/projet3/bench.jpg" alt="Bench"></a>
         </div>
 
     </div>
@@ -359,6 +386,19 @@ for (i = 0; i < coll.length; i++) {
 </script>
 
 <!-- popup -->
+
+<!-- MENU -->
+<script id="rendered-js">
+$('.toggle').click(function () {
+  $(this).toggleClass("is-active");
+  if ($(".menu-item").hasClass("active")) {
+    $(".menu-item").removeClass("active");
+  } else {
+    $(".menu-item").addClass("active");
+  }
+});
+//# sourceURL=pen.js
+    </script>
 
 </body>
 </html>
