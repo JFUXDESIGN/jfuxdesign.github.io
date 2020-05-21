@@ -296,3 +296,23 @@ nav ul li:after {
         padding: 17px 10px 17px 70px !important; float: right;
     }
 }
+
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+nav {
+    position:relative;
+}
+}
+
+
+
+
+/* iphone */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (orientation : portrait) {
+
+
+}

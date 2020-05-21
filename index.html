@@ -11,27 +11,32 @@
 <head>
 	<title>Portfolio JF</title>
 	<link rel="stylesheet" href="stylesheet-ok2.css">
-<link rel="stylesheet" href="menu-ok2.css">
- <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="menu-ok2.css">
+  <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" id="elementor-icons-shared-0-css" href="css/fontawesome.min.css?ver=5.12.0" type="text/css" media="all">
   <link rel="stylesheet" id="elementor-icons-fa-solid-css" href="css/solid.min.css?ver=5.12.0" type="text/css" media="all"> 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-<style type="text/css">
-@media screen and (max-width: 900px) {
-  img{
-  width: 45%; margin-right: 40px;
-  float: left; display:inline-block; 
-}}
-</style>
-
+ 
+  <!-- popup -->
+  <link rel="stylesheet" href="css/pop/index.css" />
+  <link rel="stylesheet" href="css/pop/_defaults.css" />
+ 
 
 <script>
   if (document.location.search.match(/type=embed/gi)) {
     window.parent.postMessage("resize", "*");
   }
 </script>
+
+<style type="text/css">
+@media screen and (max-width: 900px) { /*
+  img{
+  width: 45%; margin-right: 40px;
+  float: left; display:inline-block; 
+}*/
+}
+</style>
 
 </head>
 
@@ -63,7 +68,7 @@
 <a href="index.html"><li class="logo"><strong>Jean-François Hache</strong><br>
 Designer UX/UI</li></a>
 <li class="menu-item"><a href="index.html#portfolio">Portfolio</a></li>
-<li class="menu-item"><a href="index.html#ressources">Methodo</a></li>
+<li class="menu-item"><a href="index.html#ressources">Methodo UX</a></li>
 <li class="menu-item"><a href="index.html#cv">CV</a></li>
 <li class="menu-item"><a href="index.html#">contact</a></li>
 <!--<li class="menu-item search">
@@ -79,67 +84,106 @@ Designer UX/UI</li></a>
 </li>
 </ul>
 </nav>
-
-<br><br><br><br>
-
-<div class="container">	<br><br>EN COURS DE RÉALISATION<br><br><br>
+<br><br><br><br><br>
+<div class="container">
 <a id="portfolio"></a>
 <h3>¬ Portfolio <i class="fas fa-bullhorn" style="font-size: 18px; float: right; margin-right: 25px;"></i> </h3>
 <br>
 
-<!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column">
+ <div class="flex-row-index">
+ 
+    <div class="column-1">
+    
     <div class="projet-index">
-      <img src="imgs/projet1/header-projet1b.jpg" alt="projet 1">
-       <header><h4>Auchan Photo</h4>
-      <p>Projet n1</p></header>
-      <footer><a href="projet1.html"><span class="button">En savoir plus &nbsp; <i class="fas fa-angle-right"></i></span></a></footer>
+      <a href="projet1.html"><img src="imgs/projet1/header-projet1b.jpg" alt="projet 1"></a>
+      <header><h1>Auchan Photo</h1>
+      <p>Projet n°1</p></header>
+      <footer><a href="projet1.html"><span class="button"> &nbsp;En savoir plus &nbsp;<i class="fas fa-angle-right"></i> </span></a></footer>
     </div>
-  </div>
-
-  <div class="column">
+    
+    </div>
+    <div class="column-1">
+    
     <div class="projet-index">
-      <img src="imgs/projet2/header-projet2.jpg" alt="projet 2">
-      <header><h4>Meilleurs Taux</h4>
-      <p>Projet n2</p></header>
-      
-
+      <a href="projet2.html"><img src="imgs/projet2/header-projet2.jpg" alt="projet 2"></a>
+      <header><h1>Meilleurs Taux</h1>
+      <p>Projet n°2</p></header>
       <footer><a href="projet2.html"><span class="button">En savoir plus &nbsp; <i class="fas fa-angle-right"></i></span></a></footer>
     </div>
-  </div>
-
-
-  <div class="column">
+    
+    </div>
+    <div class="column-1">
+    
     <div class="projet-index">
-     <img src="imgs/projet3/header-projet3.jpg" alt="projet 3">
+     <a href="projet3.html"><img src="imgs/projet3/header-projet3.jpg" alt="projet 3"></a>
 
-       <header><h4>Auchan Drive</h4>
-      <p>Projet n3</p></header>
+       <header><h1>Auchan Drive</h1>
+      <p>Projet n°3</p></header>
       <footer><a href="projet3.html"><span class="button">En savoir plus &nbsp; <i class="fas fa-angle-right"></i></span></a></footer>
     </div>
-  </div>
-
-
-  <div class="column">
+    
+    </div>
+    <div class="column-1">
+    
     <div class="projet-index">
-      <img src="imgs/projet4/header-projet4.jpg" alt="projet 4">
-       <header><h4>Dragonavirus</h4>
-      <p>Projet n4</p></header>
+      <a href="projet4.html"><img src="imgs/projet4/header-projet4.jpg" alt="projet 4"></a>
+       <header><h1>Dragonavirus</h1>
+      <p>Projet n°4</p></header>
       <footer><a href="projet4.html"><span class="button">En savoir plus &nbsp; <i class="fas fa-angle-right"></i></span></a></footer>
     </div>
-  </div>
-
-  <div class="column">
+    
+    </div>
+    
+    <div class="column-1">
+    
     <div class="projet-index">
-      <img src="imgs/projet5/header-projet5.jpg" alt="projet 5">
-       <header><h4>Jeff de Bruges</h4>
-      <p>Projet n5</p></header>
+     <a href="projet5.html"><img src="imgs/projet5/header-projet5.jpg" alt="projet 5"></a>
+       <header><h1>Jeff de Bruges</h1>
+      <p>Projet n°5</p></header>
       <footer><a href="projet5.html"><span class="button">En savoir plus &nbsp; <i class="fas fa-angle-right"></i></span></a></footer>
     </div>
 
-  </div>
-  
+    
+    </div>
+    
+    <div class="column-1">
+    
+    <div class="projet-index">
+      <img src="https://media.giphy.com/media/l0HlxToy3VhOg0DRe/giphy.gif" style="max-height:175px;" alt="projet 6">
+       <header><h1>LegitBee</h1>
+      <p>Projet n°6</p></header>
+      <footer><span class="button">En cours</span></footer>
+    </div>
+
+    
+    </div>
+    
+
+    <div class="column-1">
+    
+    <div class="projet-index">
+      <img src="https://media.giphy.com/media/l0HlxToy3VhOg0DRe/giphy.gif" style="max-height:175px;" alt="projet 6">
+       <header><h1>LegitBee</h1>
+      <p>Projet n°7</p></header>
+      <footer><span class="button">Prochainement</span></footer>
+    </div>
+
+    
+    </div>
+    
+    
+    <div class="column-1">
+    
+    <div class="projet-index">
+      <img src="https://media.giphy.com/media/l0HlxToy3VhOg0DRe/giphy.gif" style="max-height:175px;" alt="projet 6">
+       <header><h1>LegitBee</h1>
+      <p>Projet n°8</p></header>
+      <footer><span class="button">Prochainement</span></footer>
+    </div>
+
+    
+    </div>
+    
 
 
 </div>
@@ -179,7 +223,11 @@ Designer UX/UI</li></a>
 -->
 </div>
 </div>
-<!-- END MAIN --><br><br>
+
+
+<br>
+<div style="text-align:center;"><i class="fas fa-seedling" style="font-size:2.5em;"></i> EN COURS DE DÉVELOPPEMENT<br><br /><img src="https://media.giphy.com/media/PPTiAIBXyIs2f62b1m/giphy.gif" style="width:20%; margin:0 auto;" /><br>Make with <i class="far fa-heart"></i> in Lille -  ©2020 - Tout droits réservés<br><br></div>
+<!-- END MAIN -->
 </div>
 
 
