@@ -356,6 +356,14 @@ article button { margin:0px; padding:0px 0 10px 0;
 .flex-row-equipe .column-4 { flex: 1 1 auto; border-right:1px solid black;  margin:10px 0px; min-width:150px; }
 .flex-row-equipe .column-5 { flex: 1 1 auto; margin:10px 0px; min-width:150px;  }
 
+.flex-row-equipe2 img { max-width:100px; margin:0 auto 10px auto; border-radius: 50%; }
+.flex-row-equipe2 img:hover {  box-shadow: 0px 0px 30px -5px rgba(0,0,0,0.5); }
+.flex-row-equipe2 { display: flex; flex-wrap: wrap;  width:100%; justify-content: center; padding: 0; margin: 0 0 10px 0;
+   height:auto;  /* align-items: flex-end;  box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.3); */ }
+.flex-row-equipe2 .column-1 { flex: 1 1 auto;  margin:10px 0px;   border-right:1px solid white; min-width:150px; }
+.flex-row-equipe2 .column-2 { flex: 1 1 auto; border-right:1px solid white;  margin:10px 0px;  min-width:150px;  }
+.flex-row-equipe2 .column-5 { flex: 1 1 auto; margin:10px 0px; min-width:150px;  }
+
 .flex-row-actions{ display: flex; flex-wrap: wrap;  width:100%; justify-content: center; padding:0 20px;  margin: 10px 0 0 0;
    height:auto; text-align: left; }
    .flex-row-actions ol { padding: 0; margin: 0; }
@@ -364,6 +372,7 @@ article button { margin:0px; padding:0px 0 10px 0;
 .flex-row-actions .column-3 { flex: 1 1 50%; border-right:1px solid black;   margin:10px 0px; padding: 10px 20px; min-width:150px; }
 .flex-row-actions .column-4 { flex: 1 1 50%; border-right:0px solid black;  margin:10px 0px; padding: 10px 20px;  min-width:150px; }
 .flex-row-actions .column-5 { flex: 1 1 100%; margin:10px 0px; min-width:150px; padding: 10px 20px;  }
+
 
 .flex-row-interview { display: flex; flex-wrap: wrap;  width:100%; justify-content: center; padding: 0; margin:0;
    height:auto;  /* align-items: flex-end;  box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.3); */ }
@@ -669,14 +678,27 @@ h3 { display:block;  padding:0px 0 10px 0; }
 @media (min-width: 320px) and (max-width: 480px) {
 
 .flex-row-index { width:100%; padding: 0px; margin:0;  }
-.flex-row-index .column-1 { flex:100%; padding: 15px 0px 5px 0px; margin:5px 18px; max-width: 600px;}
+.flex-row-index h1 { font-size:1em; line-height:0.1em; margin:15px 0 0 0; }
+.flex-row-index .column-1 { flex:100%; padding: 15px 0px 5px 0px; margin:5px 18px; max-width: 600px; height:120px;}
 
-.projet-index img { /*display:inline-block; float:left; max-width: 310px; width:50%;  height:auto; */ }
+.projet-index img { display:inline-block; float:left; max-width: 310px; width:58%;   height:120px; background-color:#999999;   }
 
 .projet-index {/*display:inline-block;  vertical-align:baseline;*/
- padding: 0; margin: 0;  width:100%;  max-width: 600px;
+ padding: 0; margin: 0;  width:100%;  max-width: 600px; 
 }
 
+
+.button { 
+margin:4px auto 15px auto; width: 104px;
+font-size: 0.65em;
+color: #999999;
+background-color: rgba(0,0,0,0);
+border-style: solid;
+border-width: 1px 1px 1px 1px;
+border-color: #aaaaaa;
+border-radius: 15px 15px 15px 15px;
+padding: 6px 0px;
+}
 
 
 article {
