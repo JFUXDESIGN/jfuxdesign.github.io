@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>http://www.pascal-levrague.fr/jeffux/contactform.html</title>
+<link rel="stylesheet" type="text/css" href="css/style-mail.css" />
+ 
+</head>
+
+<body>
+ <form name="form1" id="formulairedecontact" method="post" action="envoyer-ok.php">
+        Nom complet :
+        <input type="text" name="name" id="name" required autofocus>
+       <!-- Ville*:    
+		<input type="text" name="city" id="city" required>
+        <br />Telephone :
+        <input type="tel" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" name="phone" id="phone"> -->
+        <br />Sujet :
+        <input type="text" name="subject" id="subject">
+       <br />Email :
+        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" required>
+      	<br />Message :
+		<textarea name="monmessage" id="monmessage" rows="6" cols="50"></textarea>
+				
+		<input class="sendButton" type="submit" name="Submit" value="Envoyer">
+			
+	</form>
+</body>
+</html>
