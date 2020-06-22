@@ -47,11 +47,11 @@ header {  margin:0px; padding:0px; display:inline-block; }
 .flex-row-index { display: flex; flex-wrap: wrap; width:100%; justify-content: center;
   align-items: flex-end;  height:auto; }
 .flex-row-index .column-1 { flex:29%; padding: 15px 0px 5px 0px; margin:5px 18px 25px 18px; max-width:350px; }
-
-
+.flex-row-index .column-2 { flex:20%; padding: 15px 0px 5px 0px; margin:5px 8px 25px 8px; max-width:210px; }
+.flex-row-index .column-3 { flex:29%; padding: 15px 0px 5px 0px; margin:5px 18px 25px 18px; max-width:350px; }
 
 .projet-index {
- padding: 0; margin: 0;  max-width: 350px; border: 0px solid #cccccc; box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.1);text-align:center;
+ padding: 0; margin: 0; /* max-width: 350px;*/ border: 0px solid #cccccc; box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.1);text-align:center;
 }
  /*
 .projet-index:hover {box-shadow: 0 2px 4px rgba(50,50,93,.226),0 1px 3px rgba(0,0,0,.08);
@@ -62,7 +62,10 @@ header {  margin:0px; padding:0px; display:inline-block; }
   margin-top: 15px; line-height: 0.5em; 
 }
 .projet-index h1 { font-size:1.6em; line-height: 0.2em; color:#1d1e3c; }
-.projet-index p { font-size:0.8em; color: #aaaaaa; }
+.flex-row-index .column-2 .projet-index h1 { font-size:1.3em; line-height: 0.2em; color:#1d1e3c; }
+.projet-index p { font-size:0.8em; color: #aaaaaa;  }
+.flex-row-index .column-2 .projet-index p { font-size:0.7em; color: #aaaaaa; }
+.flex-row-index .column-3 .projet-index p { padding-left:10px; padding-right:10px; }
 
 .button { display:inline-block; text-align:center; 
 margin:8px auto 25px auto; width: 110px;
@@ -76,10 +79,15 @@ border-radius: 15px 15px 15px 15px;
 padding: 8px 0px;
 }
 
+.flex-row-index .column-2 .button { 
+font-size: 0.6em;
+
+}
+
 .button:hover, .button:focus {
-color: #d6b118;
+color: #000000; /*d6b118*/
 background-color: rgba(214,177,24,0);
-border-color: #d6b118;
+border-color: #000000;
 
 }
 
@@ -162,7 +170,7 @@ footer .gotop i { font-size: 3.5em; padding:10px 20px; display:inline-block; }
 
 
 .equipe-font {font-size:1.5em; line-height:1.5em;  color: #aaaaaa; font-weight:500; }
-.number-li3 {color:red; font-size:0.75em;}
+.number-li3, .number-li4 {color:red; font-size:0.75em;}
 .number-li2 {color:orange; font-size:0.75em;}
 .number-li1 {color:green; font-size:0.75em;}
 
@@ -680,8 +688,11 @@ h3 { display:block;  padding:0px 0 10px 0; }
 .flex-row-index { width:100%; padding: 0px; margin:0;  }
 .flex-row-index h1 { font-size:1em; line-height:0.1em; margin:15px 0 0 0; }
 /*.flex-row-index .column-1 { flex:10%; padding: 15px 0px 5px 0px; margin:5px 18px; max-width: 600px; height:120px;float:right;}
-
 .projet-index img { display:inline-block; float:left; max-width: 310px; width:58%;   height:120px; background-color:#999999;   }*/
+
+.flex-row-index .column-1 { flex:50%; padding: 15px 0px 5px 0px; margin:5px 18px 25px 18px; }
+.flex-row-index .column-2 { flex:45%; padding: 15px 0px 5px 0px; margin:5px 8px 25px 8px; }
+
 
 .projet-index {/*display:inline-block;  vertical-align:baseline;*/
  padding: 0; margin: 0;  width:100%;  max-width: 600px; 
