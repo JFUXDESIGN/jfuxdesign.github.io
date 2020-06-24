@@ -36,12 +36,11 @@ img {  outline:none; border: 0;
 
 .container{  margin:0px;  width: 100%; max-width: 1200px;
  padding: 0px 20px; }
+ 
 
 header {  margin:0px; padding:0px; display:inline-block; }
 
 
-.container{ 
- padding: 0 20px;}
 
 
 .flex-row-index { display: flex; flex-wrap: wrap; width:100%; justify-content: center;
@@ -49,6 +48,12 @@ header {  margin:0px; padding:0px; display:inline-block; }
 .flex-row-index .column-1 { flex:29%; padding: 15px 0px 5px 0px; margin:5px 18px 25px 18px; max-width:350px; }
 .flex-row-index .column-2 { flex:20%; padding: 15px 0px 5px 0px; margin:5px 8px 25px 8px; max-width:210px; }
 .flex-row-index .column-3 { flex:29%; padding: 15px 0px 5px 0px; margin:5px 18px 25px 18px; max-width:350px; }
+
+.flex-row-index .column-2 h2 {  font-size:1.1em; }
+
+.copyright { text-align:center; font-size:0.85em; margin:15px 0 5px 0; }
+.copyright2 { text-align:center; font-size:0.65em; margin:0 auto 20px auto; max-width:80%; }
+.copyright2 a { color:#aaaaaa; text-decoration:none;  }
 
 .projet-index {
  padding: 0; margin: 0; /* max-width: 350px;*/ border: 0px solid #cccccc; box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.1);text-align:center;
@@ -109,12 +114,10 @@ border-color: #000000;
 
 }
 
-/ Create four equal columns that floats next to each other /
 .column {
   display: inline-flex; 
 }
 
-/ Clear floats after rows /
 .row:after {
   content: "";
   display: table;
@@ -147,8 +150,8 @@ position: relative;
 display: block;
 
 }
-h1 {font-size:1.75em; line-height:1.2em;  color: #aaaaaa; font-weight:300; margin: 20px 0px 10px 10px;display:inline-block;}
-h2 { font-size:1.5em;  line-height:1.3em; font-weight:600; padding:0 15px;   }
+h1 {font-size:1.6em; line-height:1.2em;  color: #aaaaaa; font-weight:300; margin: 20px 0px 10px 10px;display:inline-block;}
+h2 { font-size:1.4em;  line-height:1.3em; font-weight:600; padding:0 15px;   }
 h3 {font-size:1.2em;  line-height:1em;  padding:0 15px; display:inline-block;} /* margin-top: 10px; margin-bottom: 10px;*/
 
 h6 {font-size:1.1em;  line-height:0.75em;  color: #aaaaaa;font-weight:300;  padding:0 15px;}
@@ -404,8 +407,9 @@ article button { margin:0px; padding:0px 0 10px 0;
 .flex-row-deux .column-1 { flex: 1 1 50%; padding: 15px 10px 25px 10px; margin:5px 0px; border-right:0px solid black; justify-content: center;  }
 .flex-row-deux .column-2 { flex: 1 1 50%; padding: 15px 10px 25px 10px; margin:5px 0px; border-right:0px solid black;  }
 
-
-
+.flex-row-deux-pro-50  { display: flex; flex-wrap: wrap; height:auto; margin:0 auto; text-align:left; width:100%; padding:0 5px;  }
+.flex-row-deux-pro-50 .column-1 { flex: 1 1 50%; padding: 0px 0px 0px 0px; margin:5px 0px; border-right:0px solid black; }
+.flex-row-deux-pro-50 .column-2 { flex: 1 1 50%; padding: 0px 0px 25px 0px; margin:5px 0px; border-right:0px solid black; }
 
 
 .flex-row-deux-pro { display: flex; flex-wrap: wrap; height:auto; margin:0 auto; text-align:left; width:100%; padding:0 5px;  }
@@ -413,9 +417,12 @@ article button { margin:0px; padding:0px 0 10px 0;
 .flex-row-deux-pro .column-1 { flex: 1 1 30%; padding: 5px 20px 25px 20px; margin:5px 0px; border-right:0px solid black;  }
 .flex-row-deux-pro .column-2 { flex: 1 1 70%; padding: 15px 20px 25px 10px; margin:5px 0px; border-right:0px solid black;  } 
 
-.flex-row-deux-pro-50 { display: flex; flex-wrap: wrap; height:auto; margin:0 auto; text-align:left; width:90%; padding:0 5px;  }
-.flex-row-deux-pro-50 .column-1 { flex: 1 1 50%; padding: 5px 0px 25px 25px; margin:5px 0px; border-right:0px solid black; }
-.flex-row-deux-pro-50 .column-2 { flex: 1 1 50%; padding: 5px 0px 25px 0px; margin:5px 0px; border-right:0px solid black; }
+.flex-row-role {  display: flex; flex-wrap: wrap; height:auto; text-align:left; padding-top:15px; padding-bottom:15px; border:1px solid black; margin:0px 30px 30px 30px; clear:both; font-size:0.8em;  }
+.flex-row-role .column-1 { flex: 1 1 80%;padding: 5px 0px 25px 25px; margin:5px 0px; max-width:650px; }
+.flex-row-role .column-2 { flex: 1 1 20%;padding: 5px 0px 25px 0px; margin:5px 0px;  max-width:360px; }
+.flex-row-role .column-3 { flex:100%; padding: 5px 5px 20px 5px; margin:5px 0px;  max-width:360px; }
+
+
 
 .flex-row-deux-top { display: flex; flex-wrap: wrap; height:auto; margin:0 auto; text-align:center;  }
 .flex-row-deux-top .column-1 { flex: 1 1 18%; padding: 5px 0px 15px 30px; margin:5px 0px; border-right:0px solid black;  }
@@ -666,8 +673,6 @@ article p { padding-bottom:20px; }
 footer .gotop i { font-size: 2.5em; padding:10px 20px; display:inline-block; color: #1d1e3c;}
 
 
-h3 { display:block;  padding:0px 0 10px 0; }
-
 
 .flex-row-deux-pro { display: flex; flex-wrap: wrap; height:auto; margin:0 auto; text-align:left;  }
 .flex-row-deux-pro .column-1 { flex: 1 1 100%; padding: 5px 0px 0px 20px; margin:5px auto; border-right:0px solid black; max-width:500px;justify-content: center; }
@@ -682,6 +687,20 @@ h3 { display:block;  padding:0px 0 10px 0; }
 
 .flex-row-deux-pro-50 .column-1 { flex: 1 1 100%; padding: 5px 0px 0px 0px; margin:5px 0px; border-right:0px solid black; }
 .flex-row-deux-pro-50 .column-2 { flex: 1 1 100%; padding: 0px 0px 25px 0px; margin:5px 0px; border-right:0px solid black; }
+
+.h3 { display:block; }
+
+
+.flex-row-index .column-1 { flex:100%; margin-top:0;}
+.flex-row-index .column-2 { flex:45%;  }
+.flex-row-index .column-3 { flex:100%; }
+
+.container h1 {  line-height:1.2em; font-size:1.5em; }
+.flex-row-index .column-2 h2 {  font-size:1em; }
+
+.copyright {font-size:0.75em; }
+
+
 }
 @media (min-width: 320px) and (max-width: 480px) {
 
@@ -691,8 +710,8 @@ h3 { display:block;  padding:0px 0 10px 0; }
 .projet-index img { display:inline-block; float:left; max-width: 310px; width:58%;   height:120px; background-color:#999999;   }*/
 
 .flex-row-index .column-1 { flex:50%; padding: 15px 0px 5px 0px; margin:5px 18px 25px 18px; }
-.flex-row-index .column-2 { flex:45%; padding: 15px 0px 5px 0px; margin:5px 8px 25px 8px; }
-
+.flex-row-index .column-2 { flex:50%; padding: 15px 0px 5px 0px; margin:5px 8px 25px 8px; }
+.flex-row-index .column-3 { flex:100%; }
 
 .projet-index {/*display:inline-block;  vertical-align:baseline;*/
  padding: 0; margin: 0;  width:100%;  max-width: 600px; 
