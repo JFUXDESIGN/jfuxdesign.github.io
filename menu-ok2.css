@@ -268,7 +268,7 @@ nav ul li:after {
         -ms-flex-pack: justify;
         -webkit-box-align: center;
         -ms-flex-align: center;
-		
+		background-color: blue;
     }
 
     .logo {
@@ -321,7 +321,7 @@ nav {
 and (min-device-width : 375px) 
 and (max-device-width : 812px) 
 and (orientation : portrait) {
-.logo, .logo a { background-color: red;
+.logo, .logo a { 
     width: 310px;
 }
 
@@ -330,7 +330,7 @@ and (orientation : portrait) {
 @media (min-width: 320px) and (max-width: 480px) {
 
 .logo, .logo a {
-margin-left:10px;   width: 310px;
+margin-left:10px;   width: 310px; background-color: red;
 }
 
 }
