@@ -329,7 +329,7 @@ and (orientation : portrait) {
 @media (min-width: 320px) and (max-width: 480px) {
 
 .logo, .logo a {
-margin-left:10px;   width: 310px; 
+margin-left:6px;   width: 310px; 
 }
 
 }
