@@ -622,7 +622,7 @@ h3 { display:block;  padding:0px 0 10px 0; }
 
 .copyright2 {font-size:0.6em; max-width:90%; }
 
-.flex-row-index .column-2 { flex:40%;  }
+.flex-row-index .column-2 { flex:35%; background-color: red; }
 
 }
 	 

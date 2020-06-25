@@ -321,7 +321,7 @@ nav {
 and (min-device-width : 375px) 
 and (max-device-width : 812px) 
 and (orientation : portrait) {
-.logo, .logo a {
+.logo, .logo a { background-color: red;
     width: 310px;
 }
 
@@ -330,7 +330,7 @@ and (orientation : portrait) {
 @media (min-width: 320px) and (max-width: 480px) {
 
 .logo, .logo a {
-margin-left:10px;   width: 330px;
+margin-left:10px;   width: 310px;
 }
 
 }
