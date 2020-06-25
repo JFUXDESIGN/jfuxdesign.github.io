@@ -510,9 +510,9 @@ article button { margin:0px; padding:0px 0 10px 0;
 .flex-row-parcours .column-1 { flex: 1 1 40%;  padding: 15px 10px 5px 10px; margin:5px 0px; border-right:0px solid black; max-width:300px;  }
 
 
-.copyright2 {font-size:0.6em; max-width:90%; }
+.copyright2 {font-size:0.6em; max-width:90%; margin-top:5px;  }
 
-.flex-row-index .column-2 { flex:35%; background-color: red; }
+.flex-row-index .column-2 { flex:30%;  }
 }
 
 
