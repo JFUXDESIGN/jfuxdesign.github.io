@@ -69,6 +69,29 @@ width: 100%;
 height: 585px;
 }
 
+/* iPad mini in landscape */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 1)  {
+.iframe
+{overflow:scroll !important; -webkit-overflow-scrolling:touch !important; width: 100%; margin:0 10px 10px 10px;
+height: 260px;
+}
+}
+
+/* iPad mini in portrait */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 1)  {
+.iframe
+{overflow:scroll !important; -webkit-overflow-scrolling:touch !important; width: 100%; margin:0 10px 10px 10px;
+height: 360px;
+}
+} 
 
 @media only screen 
 and (min-device-width : 375px) 
