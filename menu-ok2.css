@@ -330,7 +330,7 @@ font-weight:600;
   
 }
 .tel i {
-   font-size: 1.2em;padding: 0 2px;
+   font-size: 1.2em; padding: 0 2px;
   
 }
 .menu-item i:hover { color:#33CCCC; }
@@ -342,7 +342,7 @@ nav {
     position:relative;
 }
 .logo, .logo a {
-margin-left:6px;   width: 260px; background-color: red;
+margin-left:6px;   width: 240px; background-color: red;
 }
 }
 
@@ -355,7 +355,7 @@ and (min-device-width : 375px)
 and (max-device-width : 812px) 
 and (orientation : portrait) {
 .logo, .logo a { 
-    width: 290px; 
+   /* width: 290px; */
 }
 
 }
@@ -363,7 +363,7 @@ and (orientation : portrait) {
 @media (min-width: 320px) and (max-width: 480px) {
 
 .logo, .logo a {
-margin-left:6px;   width: 280px; 
+margin-left:6px; 
 }
 
 }
