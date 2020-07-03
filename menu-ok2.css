@@ -342,7 +342,7 @@ nav {
     position:relative;
 }
 .logo, .logo a {
-margin-left:6px;   width: 260px; background-color: red;
+margin-left:26px;   width: 260px; background-color: red;
 }
 }
 
@@ -354,7 +354,7 @@ margin-left:6px;   width: 260px; background-color: red;
 and (min-device-width : 375px) 
 and (max-device-width : 812px) 
 and (orientation : portrait) {
-.logo, .logo a { 
+.logo, .logo a { margin-left:66px;
     width: 240px; 
 }
 
@@ -363,7 +363,7 @@ and (orientation : portrait) {
 @media (min-width: 320px) and (max-width: 480px) {
 
 .logo, .logo a {
-margin-left:6px;   width: 240px; 
+margin-left:-16px;   width: 240px; 
 }
 .tel i {
    font-size: 1.2em;padding: 0;
