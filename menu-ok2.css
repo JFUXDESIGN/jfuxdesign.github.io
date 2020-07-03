@@ -39,19 +39,21 @@
 /*MENU*/
 
 nav {
-    width: 100%; max-width: 1200px; margin:0 auto; position: fixed; z-index: 99999;
+    width: 100%; max-width: 1200px; margin:0 auto; position: fixed; z-index: 2;
 }
 nav ul li:after {
    clear: both; content: "";
 }
 
 .logo, .logo a {
-    text-align: left; padding: 20px 0 10px 20px; width: 350px; color: #aaaaaa; line-height: 1.4em;
+    text-align: left; padding: 20px 0 10px 20px; width: 290px; color: #aaaaaa; line-height: 1.4em; background-image:url("imgs/meta/seht-logo-gris.jpg"); background-position:4% 15%; background-repeat: no-repeat;
+  background-size: 60px 60px; /*color: #b0c934;*/
 }
 
 .logo strong, .logo strong a  {
- font-size: 1.4em; color: #1d1e3c;
+ font-size: 1.4em; color: #1d1e3c; /* color: #388aaa;*/
 }
+
 
 .menu {
     display: -webkit-box;
@@ -74,6 +76,7 @@ nav ul li:after {
     -webkit-box-align: center;
     -ms-flex-align: center;
     text-decoration: none;
+	text-align:center;
 }
 
 .menu a {
@@ -83,15 +86,35 @@ nav ul li:after {
     font-size: 1em;
     color: #999;
     text-decoration: none;
-    -webkit-transition: all .3s linear;
-    -o-transition: all .3s linear;
-    transition: all .3s linear;
+    -webkit-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    transition: all .1s linear;
+	padding:0 70px 0 0;	
 }
-
+/*
 .menu a:hover {
     text-decoration: none;
     color: #000000; 
+}*/
+
+.portfolio a:hover {
+font-weight:600;
+    text-decoration:underline;
+    color: #ea9706; 
 }
+
+.methode a:hover {
+font-weight:600;
+    text-decoration:underline;
+    color: #e06491; 
+}
+
+.cv a:hover {
+font-weight:600;
+    text-decoration:underline;
+    color: #b0c934; 
+}
+
 
 .menu-item { 
     display: none;
@@ -105,6 +128,7 @@ nav ul li:after {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2; text-decoration: none;
 }
+
 
 .menu-item.active {
     display: block; 
@@ -297,15 +321,22 @@ nav ul li:after {
     }
 	
 }
-/*@media (min-width: 481px) and (max-width: 767px) {
-
-.tel i {
- font-size:1.6em; padding: 2px 12px!important;
+@media (min-width: 481px) and (max-width: 767px) {
+.menu a {
+	padding:0 0px 0 0;	
+}
+.menu-item {
+    font-size: 1.5em; line-height:2em;
   
 }
+.tel i {
+   font-size: 1.2em;padding: 0 12px;
+  
+}
+.menu-item i:hover { color:#33CCCC; }
 }
 
- iPads (portrait) ----------- */
+
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 nav {
     position:relative;

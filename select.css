@@ -13,12 +13,12 @@ box-shadow: none;
 font-size: 1em; line-height:2.5em; vertical-align:middle; 
 }
 
-option {padding: 0px 0 0px 20px;}
+option {padding: 12px 0 10px 20px;}
 
 /* Mise en place des dimensions. On cache la flèche d’origine */
 .select {
 position: relative;
-width:60%; 
+width:40%; 
 height: 45px;
 overflow: hidden;
 border-radius: 5px;
@@ -48,4 +48,10 @@ background: #ffffff;
 }
 .select:hover::after {
 color: #cccccc;
+}
+
+
+@media(max-width:767px) {
+
+.select {width:80%; margin:0 auto; }
 }

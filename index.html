@@ -13,25 +13,25 @@
 <meta name="format-detection" content="telephone=no"/>
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
-   
-   <link rel="shortcut icon" type="image/x-icon" href="https://jeffhache.design/imgs/meta/jeffhache.ico">
+ 
+  <link rel="shortcut icon" href="https://jeffhache.design/imgs/meta/jeffhache.ico" />
+  <link rel="icon" sizes="16x16 32x32" href="https://jeffhache.design/imgs/meta/jeffhache.ico">
+  <link rel="mask-icon" href="https://jeffhache.design/imgs/meta/jeffhache.svg">
+  
    
     <meta name="Keywords" content="Jean-François Hache, Jeffhache, UX Designer, Graphiste, Lille, UX, UI">
-    
-   <meta name="Description" content="Jean-François - UX Designer - Anciennement Graphiste depuis plusieurs années dans des agences de communication à 360°">
-   
+    <meta name="Description" content="Jean-François - UX Designer - Anciennement Graphiste depuis plusieurs années dans des agences de communication à 360°">
     <meta name="classification" content="Gaphiste, Infographie, PAO, Video, UX, Webdesign">
 	<meta name="geography" content="France">
 	<meta name="copyright" content="2020 - Jean-François Hache" />
-    <META NAME="Author" CONTENT="Jean-François Hache" />
-    <META NAME="Category" CONTENT="Gaphiste, Infographie, PAO, Video, UX, Webdesign" />
+    <meta name="Author" content="Jean-François Hache" />
+    <meta name="Category" content="Gaphiste, Infographie, PAO, Video, UX, Webdesign" />
 
     
 <meta property="og:site_name" content="Jean-François Hache - UX/UI Designer" />
 <meta property="og:title" content="Jean-François Hache - UX/UI Designer"/> 
 <meta property="og:image" content="https://jeffhache.design/imgs/meta/jeffhache.jpg" />
-<meta property="og:image:secure_url" content="https://jeffhache.design/imgs/meta/jeffhache.jpg" />
-<meta property="og:image:type" content="website" />
+<meta property="og:type" content="website" />
 <meta property="og:image:width" content="300" />
 <meta property="og:image:height" content="300" />
 <meta property="og:description" content="Jean-François - UX Designer - Anciennement Graphiste depuis plusieurs années dans des agences de communication à 360°"/>
@@ -42,6 +42,7 @@
     
 <head>
 	<title>Jean-François Hache - UX/UI Designer</title>
+    
 	<link rel="stylesheet" href="stylesheet-ok2.css">
   <link rel="stylesheet" href="menu-ok2.css">
   <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet">
@@ -85,11 +86,10 @@
 <ul class="menu">
 <a href="index.html"><li class="logo"><strong>Jean-François Hache</strong><br>
 UX/UI Designer</li></a>
-<li class="menu-item"><a href="index.html#portfolio">Portfolio</a></li>
-<li class="menu-item"><a href="index.html#ressources">Methodo UX</a></li>
-<li class="menu-item"><a href="cv.html">CV</a></li>
-
-<li class="menu-item tel"><a href="https://fr.linkedin.com/in/jean-fran%C3%A7ois-hache-a9005945" target="_blank"><i class="fab fa-linkedin-in"></i></a> <a href="https://www.pinterest.fr/jeffhache/" target="_blank"><i class="fab fa-pinterest"></i></a> <a href="https://www.instagram.com/jeanfrancoisjeffh/" target="_blank"><i class="fab fa-instagram"></i></a> <a href="https://www.youtube.com/user/AETWFT" target="_blank"><i class="fab fa-youtube"></i></a> <a href="https://open.spotify.com/user/tenhopehorses?si=wP32NXmxQfm-d68m1oHcYQ" target="_blank"><i class="fab fa-spotify"></i></a> &nbsp;</li>
+<li class="menu-item"><div class="portfolio"><a href="index.html#portfolio">Portfolio</a></div></li>
+<li class="menu-item"><div class="methode"><a href="index.html#ressources">Methodo UX</a></div></li>
+<li class="menu-item"><div class="cv"><a href="cv.html">CV</a></div></li>
+<li class="menu-item tel" id="menu-item tel"><a href="https://fr.linkedin.com/in/jean-fran%C3%A7ois-hache-a9005945" target="_blank"><i class="fab fa-linkedin-in"></i></a> <a href="https://www.pinterest.fr/jeffhache/" target="_blank"><i class="fab fa-pinterest"></i></a> <a href="https://www.instagram.com/jeanfrancoisjeffh/" target="_blank"><i class="fab fa-instagram"></i></a> <a href="https://www.youtube.com/user/AETWFT" target="_blank"><i class="fab fa-youtube"></i></a> <a href="https://open.spotify.com/user/tenhopehorses?si=wP32NXmxQfm-d68m1oHcYQ" target="_blank"><i class="fab fa-spotify"></i></a> &nbsp;</li>
 <li class="toggle">
 <span class="line"></span>
 <span class="line"></span>
@@ -213,7 +213,7 @@ UX/UI Designer</li></a>
 
 
 <a id="ressources"></a>
-<h1>¬ Méthodo <!--<i class="fa fa-flask" style="font-size: 18px; float: right; padding-right: 25px;"></i> --></h1><br>
+<h1>¬ Méthodo UX<!--<i class="fa fa-flask" style="font-size: 18px; float: right; padding-right: 25px;"></i> --></h1><br>
 
  <div class="flex-row-index">
  
@@ -221,31 +221,53 @@ UX/UI Designer</li></a>
     
     <div class="projet-index">
       <a href="etude-cas.html"><img src="imgs/etudedecas2.jpg" alt="Étude de cas"></a>
-      <header><h2>Étude de cas</h2>
-      <p>Journal de bord d'un UX Designer entre quelques jours de liberté et la période du confinement sur le projet n°3 - Auchan Drive.</p></header>
-      <footer><a href="etude-cas.html"><span class="button">En savoir plus &nbsp; <i class="fas fa-angle-right"></i></span></a></footer>
+      <header><h2>Process - Étude de cas</h2>
+      <p>Journal de bord d'un UX Designer entre quelques jours de liberté et la période du confinement sur le 3<sup>e</sup> projet - Auchan Drive.</p></header>
+      <footer><a href="etude-cas.html"><span class="button2">En savoir plus &nbsp; <i class="fas fa-angle-right"></i></span></a></footer>
     </div>
     
     </div>
     <div class="column-3">
     
     <div class="projet-index">
-       <img src="imgs/roles.jpg" style="max-height:175px;" alt="Les rôles dans l'UX">
+       <a href="roles.html"><img src="imgs/roles.jpg" style="max-height:175px;" alt="Les rôles dans l'UX"></a>
       <header><h2>Les rôles dans l'UX</h2>
       <p>Pour qu'un projet se déroule sans accro, nous avons besoin d'un Facilitateur, d'un Interviewer, d'un Décideur et d'une équipe UX.</p></header>
-      <footer><a href="roles.html"><span class="button">En savoir plus &nbsp; <i class="fas fa-angle-right"></i></span></a></footer>
+      <footer><a href="roles.html"><span class="button2">En savoir plus &nbsp; <i class="fas fa-angle-right"></i></span></a></footer>
+    </div>
+
+</div>
+
+<div class="column-3">
+    
+    <div class="projet-index">
+      <img src="imgs/thinking.jpg" style="max-height:175px;" alt="Les rôles dans l'UX">
+      <header><h2>Le Design Thinking</h2>
+      <p>Comment faire émerger des idées collectives afin d'en résulter une solution. Un autre job que peux revendiquer un bon UX Designer.</p></header>
+      <footer><span class="button2">En écriture &nbsp; <i class="fas fa-angle-right"></i></span></footer>
     </div>
 
 </div>
 
 </div>
 
+
+
+
+
 <footer>
+<div class="social"><span style="font-size:0.5em; line-height:3em; color:#666666;">Follow me on social</span><br /><a href="https://fr.linkedin.com/in/jean-fran%C3%A7ois-hache-a9005945" target="_blank"><i class="fab fa-linkedin-in"></i></a> <a href="https://www.pinterest.fr/jeffhache/" target="_blank"><i class="fab fa-pinterest"></i></a> <a href="https://www.instagram.com/jeanfrancoisjeffh/" target="_blank"><i class="fab fa-instagram"></i></a> <a href="https://www.youtube.com/user/AETWFT" target="_blank"><i class="fab fa-youtube"></i></a> <a href="https://open.spotify.com/user/tenhopehorses?si=wP32NXmxQfm-d68m1oHcYQ" target="_blank"><i class="fab fa-spotify"></i></a></div>
+<div class="line-bottom"></div>
+
 <div class="copyright">© 2020 - <b>Fait petit à petit avec <i class="far fa-heart"></i> sur Lille</b></div>
 <div class="copyright2">Toute représentation, reproduction, modification, utilisation commerciale, ainsi que tout transfert vers un autre site sont interdits - L’ensemble du contenu de ce site, y compris (mais pas exclusivement) les photographies, les images et les textes, est la propriété de Jean-françois Hache et aux élèves de la Pop School ayant participés aux différents projets, ainsi qu'aux porteurs de projet - La méthode UX originel a été développée par <a href="https://www.linkedin.com/in/guillaumepalayer" target="blank">Guillaume Palayer</a>, je n'ai fait que l'adapter.</div>
-</footer><br />
+</footer>
+
+
+
 <!-- END MAIN -->
 </div>
+<img src="imgs/footer.png">
 
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
@@ -292,12 +314,13 @@ click(function (event) {
 
 <!-- MENU -->
 <script id="rendered-js">
+document.getElementById("menu-item tel").style.display = "none";
 $('.toggle').click(function () {
   $(this).toggleClass("is-active");
   if ($(".menu-item").hasClass("active")) {
-    $(".menu-item").removeClass("active");
+    $(".menu-item").removeClass("active"); document.getElementById("menu-item tel").style.display = "none";
   } else {
-    $(".menu-item").addClass("active");
+    $(".menu-item").addClass("active"); document.getElementById("menu-item tel").style.display = "block";
   }
 });
 //# sourceURL=pen.js
