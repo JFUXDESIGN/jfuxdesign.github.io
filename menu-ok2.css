@@ -342,7 +342,7 @@ nav {
     position:relative;
 }
 .logo, .logo a {
-padding-left:2px;  width: 250px;
+
 }
 }
 
@@ -354,10 +354,15 @@ padding-left:2px;  width: 250px;
 and (min-device-width : 375px) 
 and (max-device-width : 812px) 
 and (orientation : portrait) {
-.logo, .logo a { margin-left:66px;
-    width: 240px; 
+.logo, .logo a { padding-left:2px;  width: 250px;
 }
-
+.menu a {
+	padding:0;	
+}
+.menu-item i {
+   font-size: 1.2em; padding: 0 2px;
+  
+}
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
