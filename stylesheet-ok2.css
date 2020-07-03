@@ -888,20 +888,6 @@ footer .gotop i { font-size: 2.5em; padding:10px 20px; display:inline-block;  }
 
 
 
-
-
-
-/* ipad Mini Portait */
-@media only screen and (width:768px) and (resolution: 163dpi) {
-.container{  margin:20px 0 0 0; background-color:#003399;  }
-}
-
-/* ipad Mini Landscape */
-@media only screen and (width:1024px) and (resolution: 163dpi) {
-.container{  margin:20px 0 0 0; background-color:#9933CC;  }
-}
-
-
 /* iPad mini in landscape */
 @media only screen 
 and (min-device-width : 768px) 
@@ -918,7 +904,7 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : portrait)
 and (-webkit-min-device-pixel-ratio: 1)  {
- .container{  margin:20px 0 0 0;  } 
+ .container{  margin:35px 0 0 0;  } 
 
 } 
 
