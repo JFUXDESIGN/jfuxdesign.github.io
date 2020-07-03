@@ -341,8 +341,14 @@ font-weight:600;
 nav {
     position:relative;
 }
-.logo, .logo a {
-
+.logo, .logo a { padding-left:6px;  width: 250px;
+}
+.menu a {
+	padding:0;	
+}
+.menu-item i {
+   font-size: 1.2em; padding: 0 2px;
+  
 }
 }
 
@@ -354,7 +360,7 @@ nav {
 and (min-device-width : 375px) 
 and (max-device-width : 812px) 
 and (orientation : portrait) {
-.logo, .logo a { padding-left:2px;  width: 250px;
+.logo, .logo a { padding-left:6px;  width: 250px;
 }
 .menu a {
 	padding:0;	
@@ -368,7 +374,7 @@ and (orientation : portrait) {
 @media (min-width: 320px) and (max-width: 480px) {
 
 .logo, .logo a {
-padding-left:2px;   width: 250px; 
+padding-left:6px;   width: 250px; 
 }
 .menu a {
 	padding:0;	
