@@ -330,7 +330,7 @@ font-weight:600;
   
 }
 .tel i {
-   font-size: 1.2em;padding: 0 12px;
+   font-size: 1.2em;padding: 0 2px;
   
 }
 .menu-item i:hover { color:#33CCCC; }
@@ -352,7 +352,7 @@ and (min-device-width : 375px)
 and (max-device-width : 812px) 
 and (orientation : portrait) {
 .logo, .logo a { 
-    width: 310px;
+    width: 300px;
 }
 
 }
@@ -360,7 +360,7 @@ and (orientation : portrait) {
 @media (min-width: 320px) and (max-width: 480px) {
 
 .logo, .logo a {
-margin-left:6px;   width: 310px; 
+margin-left:6px;   width: 300px; 
 }
 
 }
