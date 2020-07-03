@@ -363,10 +363,14 @@ and (orientation : portrait) {
 @media (min-width: 320px) and (max-width: 480px) {
 
 .logo, .logo a {
-padding-left:-16px;   width: 250px; color: red; 
+padding-left:2px;   width: 250px; 
 }
-.tel i {
+.menu a {
+	padding:0;	
+}
+.menu-item i {
    font-size: 1.2em; padding: 0;
   
 }
+
 }
