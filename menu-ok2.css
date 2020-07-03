@@ -352,7 +352,7 @@ and (min-device-width : 375px)
 and (max-device-width : 812px) 
 and (orientation : portrait) {
 .logo, .logo a { 
-    width: 300px;
+    width: 300px; background-color: red;
 }
 
 }
