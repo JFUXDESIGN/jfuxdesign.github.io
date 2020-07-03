@@ -908,7 +908,8 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : landscape)
 and (-webkit-min-device-pixel-ratio: 1)  {
-.container{  margin:20px 0 0 0; background-color:#9933CC;  }
+.container{  margin:40px 0 0 0;  }
+.flex-row-parcours .column-1 { flex: 1 1 30%; padding: 15px 10px 5px 10px; margin:5px 0px; border-right:0px solid black; }
 }
 
 /* iPad mini in portrait */
@@ -917,4 +918,8 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : portrait)
 and (-webkit-min-device-pixel-ratio: 1)  {
- .container{  margin:20px 0 0 0; background-color:#003399;  }
+ .container{  margin:20px 0 0 0;  } 
+
+} 
+
+
