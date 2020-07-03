@@ -342,7 +342,7 @@ nav {
     position:relative;
 }
 .logo, .logo a {
-margin-left:26px;   width: 260px; background-color: red;
+padding-left:2px;  width: 250px;
 }
 }
 
@@ -369,7 +369,7 @@ padding-left:2px;   width: 250px;
 	padding:0;	
 }
 .menu-item i {
-   font-size: 1.2em; padding: 0;
+   font-size: 1.2em; padding: 0 2px;
   
 }
 
